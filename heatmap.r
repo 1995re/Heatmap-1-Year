@@ -1,4 +1,5 @@
 library(ggplot2)
+library(ggthemes)
 library(RColorBrewer)
 
 ggplot(data, aes(Tanggal, Bulan)) +
@@ -11,5 +12,3 @@ ggplot(data, aes(Tanggal, Bulan)) +
         panel.border = element_blank(),
         panel.background = element_blank(),
         axis.text.x = element_text(angle = 90)) + coord_equal(ratio = 1) + theme_tufte(base_family="Helvetica") + scale_x_continuous(breaks=c(1:31), expand=c(0,0))
-
-
