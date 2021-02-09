@@ -3,7 +3,8 @@ library(ggthemes)
 library(RColorBrewer)
 
 *library(readxl)
-**data <- read_excel("data/data.xls")
+**data <- file.path('d:', 'Alam', 'Heatmap 1 Year', 'data', 'data.xls') #Offline
+**data <- read_excel("data/data.xls") #Jupyter
 *View(data)
 
 ggplot(data, aes(Tanggal, Bulan)) +
